@@ -4,9 +4,8 @@ import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
 export default function NavBar() {
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1, mb: 10 }} position="sticky" zIndex="1000">
         <AppBar
-          position="static"
           sx={{
             bgcolor: "green",
           }}
