@@ -4,12 +4,17 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
+import { AuthProvider } from "./contexts/AuthContext";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <NavBar />
-      <HomePage />
+      <AuthProvider>
+        <NavBar />
+        <HomePage />
+        <Footer />
+      </AuthProvider>
     </>
   );
 }
